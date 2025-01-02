@@ -90,5 +90,8 @@ document.getElementById("check-button").addEventListener("click", function() {
     });
 });
 
+//look for arrow key being presssed
+window.addEventListener("keydown", moveToNextCell);
+
 // Initialize the grid on page load
 createGrid();
