@@ -3,10 +3,10 @@
 // Solution array (same as the one in C)
 const solution = [
     ["b", "r", "o", "w", "n"],
-    ["E", "a", "r", "t", "h"],
+    ["e", "a", "r", "t", "h"],
     ["H", "a", "z", "e", "l"],
     ["A", "n", "g", "i", "e"],
-    ["f", "r", "o", "w", "n"]
+    ["f", "l", "o", "u", "r"]
 ];
 
 // Create the crossword grid dynamically
