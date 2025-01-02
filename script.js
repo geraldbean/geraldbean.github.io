@@ -45,6 +45,7 @@ function onInputChange(event) {
     }
 }
 
+// Move to the next cell when an arrow key is pressed
 function moveToNextCell(event) {
     let nextRow = currentRow;
     let nextCol = currentCol;
@@ -63,9 +64,10 @@ function moveToNextCell(event) {
             if (currentCol < 4) nextCol++;
             break;
         default:
-            return;
+            return; // Do nothing if it's not an arrow key
     }
 
+    // Update the active cell's focus
     currentRow = nextRow;
     currentCol = nextCol;
     const nextInput = document.querySelector(`[data-row='${currentRow}'][data-col='${currentCol}']`);
