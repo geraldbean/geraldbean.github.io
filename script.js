@@ -36,13 +36,13 @@ function onInputChange(event) {
     const correctAnswer = solution[row][col].toUpperCase();
 
     // Check if the answer is correct
-    if (userInput === correctAnswer) {
-        input.style.backgroundColor = "lightgreen";
-    } else if (userInput !== "") {
-        input.style.backgroundColor = "lightcoral";
-    } else {
-        input.style.backgroundColor = "";
-    }
+    // if (userInput === correctAnswer) {
+    //     input.style.backgroundColor = "lightgreen";
+    // } else if (userInput !== "") {
+    //     input.style.backgroundColor = "lightcoral";
+    // } else {
+    //     input.style.backgroundColor = "";
+    // }
 }
 
 // Move to the next cell when an arrow key is pressed
