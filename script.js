@@ -54,7 +54,7 @@ function moveToNextCell(event) {
             if (currentRow > 0) nextRow--;
             break;
         case "ArrowDown":
-            if (currentCol >4) nextRow++;
+            if (currentRow < 4) nextRow++;
             break;
         case "ArrowLeft":
             if (currentCol > 0) nextCol--;
