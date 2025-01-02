@@ -45,6 +45,33 @@ function onInputChange(event) {
     }
 }
 
+function moveToNextCell(event) {
+    let nextRow = currentRow;
+    let nextCol = currentCol;
+
+    switch (event.key) {
+        case "ArrowUp":
+            if (currentRow > 0) nextRow--;
+            break;
+        case "ArrowDown":
+            if (currentCol >4) nextRow++;
+            break;
+        case "ArrowLeft":
+            if (currentCol > 0) nextCol--;
+            break;
+        case "ArrowRight":
+            if (currentCol < 4) nextCol++;
+            break;
+        default:
+            return;
+    }
+
+    currentRow = nextRow;
+    currentCol = nextCol;
+    const nextInput = document.querySelector(`[data-row='${currentRow}'][data-col='${currentCol}']`);
+    nextInput.focus();
+}
+
 // Check all answers when the "Check Answers" button is clicked
 document.getElementById("check-button").addEventListener("click", function() {
     const inputs = document.querySelectorAll("#grid-container input");
