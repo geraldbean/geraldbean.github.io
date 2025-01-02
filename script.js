@@ -35,18 +35,13 @@ function onInputChange(event) {
     const userInput = input.value.toUpperCase();
     const correctAnswer = solution[row][col].toUpperCase();
 
-    // Check if the answer is correct
-    // if (userInput === correctAnswer) {
-    //     input.style.backgroundColor = "lightgreen";
-    // } else if (userInput !== "") {
-    //     input.style.backgroundColor = "lightcoral";
-    // } else {
-    //     input.style.backgroundColor = "";
-    // }
 }
 
-// Move to the next cell when an arrow key is pressed
 function moveToNextCell(event) {
+    if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+        return; // Exit early if it's not an arrow key
+    }
+
     let nextRow = currentRow;
     let nextCol = currentCol;
 
@@ -63,13 +58,11 @@ function moveToNextCell(event) {
         case "ArrowRight":
             if (currentCol < 4) nextCol++;
             break;
-        default:
-            return; // Do nothing if it's not an arrow key
     }
 
-    // Update the active cell's focus
     currentRow = nextRow;
     currentCol = nextCol;
+
     const nextInput = document.querySelector(`[data-row='${currentRow}'][data-col='${currentCol}']`);
     nextInput.focus();
 }
