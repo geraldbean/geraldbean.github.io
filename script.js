@@ -2,7 +2,7 @@
 
 // Solution array (same as the one in C)
 const solution = [
-    ["H", "e", "l", "l", "o"],
+    ["b", "r", "o", "w", "n"],
     ["E", "a", "r", "t", "h"],
     ["H", "a", "z", "e", "l"],
     ["A", "n", "g", "i", "e"],
