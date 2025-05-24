@@ -1,5 +1,6 @@
 .banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sayan.jpg");
+/*     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sayan.jpg"); */
+    background-image: gray;
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
