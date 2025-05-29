@@ -1,0 +1,75 @@
+/*you need this block of css for your banner image to display*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*the style for the banner image that is displayed. This controls the gradient on top of the image, the size, how much of the page it covers etc*/
+.banner_img{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("stars.jpg");
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*this controls the way the text on the banner looks.*/
+.banner_text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.column_two{
+   float: left;
+   width: 50%;
+   padding: 10px;
+}
+
+/*to have a section split into three columns*/
+.column_three{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/*make sure these colums do not continue down the page past the right section*/
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*this style helps choose how big the image you have of yourself at the top of the page is*/
+.image{
+  padding: 20px;
+  height: 500px;
+  width: 350px;
+  border-radius: 60px;
+}
+
+/*this styles helps you choose the way your text is styled in that introduction paragraph you have*/
+.text{
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*this style will help you choose how big the image of each project is on your button*/
+.button{
+  width: 200px;
+  height: 300px;
+}
+
+.project_image{
+  height: 200px;
+  width: 100px;
+  padding: 10px;
+}
