@@ -7,7 +7,7 @@ body, html {
 
 /*the style for the banner image that is displayed. This controls the gradient on top of the image, the size, how much of the page it covers etc*/
 .banner_img{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("stars.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/stars.jpg");
   height: 50%;
   background-position: center;
   background-size: cover;
